@@ -18,3 +18,12 @@ const allheros = marvel_heros.concat(dc_heros)  // Concates the two array and st
 // const newarr_another= another_arr.flat(Infinity)
 // console.log(newarr_another);
 
+console.log(Array.isArray("Krishnan"))
+console.log(Array.from("Krishnan"));
+console.log(Array.from({name : "Krishnan"}))
+
+const s1 =100;
+const s2 =200;
+const s3 =300;
+
+console.log(Array.of(s1,s2,s3));
