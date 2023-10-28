@@ -43,6 +43,8 @@ function holdobjects(anyobj){
 }
 
 holdobjects(objectlist)
+
+
 holdobjects({
     username : "sam",
     price : 299
