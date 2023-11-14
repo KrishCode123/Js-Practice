@@ -5,7 +5,7 @@
 [Click](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 ### Solution 
-project 1
+Project 1
 
 ```javascript
 console.log("Krishnan")
@@ -34,6 +34,7 @@ buttons.forEach(function (button) {
 });
 ```
 
+Project 2
 ```javascript
 const form = document.querySelector('form');
 // this usecase will give you empty
@@ -57,9 +58,9 @@ form.addEventListener('submit', function (e) {
   }
 });
 
-
 ```
 
+Project 3
 ```javascript
 const clock = document.getElementById('clock');
 // const clock = document.querySelector('#clock')
@@ -73,6 +74,7 @@ setInterval(function () {
 
 ```
 
+Project 4
 ```javascript
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
