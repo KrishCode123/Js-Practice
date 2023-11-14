@@ -27,7 +27,7 @@ const books = [
 
 
   books.forEach((i) => {
-    if(i.publish > 2000){
+    if(i.publish >= 1995 && i.genre=='History'){
         console.log(i);
     }
   })
