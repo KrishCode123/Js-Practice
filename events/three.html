@@ -12,16 +12,17 @@
 </body>
 <script>
     
+    let set
     const change = () => {
         console.log("Krishnan",  Date.now());}
 
     document.querySelector("#start").addEventListener('click' , () => {
-       var set =  setInterval(change, 2000);
+       set =  setInterval(change, 2000);
     }
     )
 
     document.querySelector("#stop").addEventListener('click' , () => {
-        clearInterval()
+        clearInterval(set)
         console.log("Stopped");
     })
     
