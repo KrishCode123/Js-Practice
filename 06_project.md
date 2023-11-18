@@ -171,7 +171,39 @@ function newGame() {
 
 ```
 
-# Project 5
+
+### project 5 
+
+```javascript
+// Generate unlimited colours but random
+
+const randomcolor = () => {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+let intervalid;
+document.querySelector('#start').addEventListener('click', () => {
+  if (!intervalid) {
+    intervalid = setInterval(changebgcolor, 1000);
+  }
+  function changebgcolor() {
+    document.body.style.backgroundColor = randomcolor();
+  }
+});
+
+document.querySelector('#stop').addEventListener('click', () => {
+  clearInterval(intervalid);
+  intervalid = null;
+});
+
+```
+
+### Project 6
 ```javascript
 
 const insert = document.getElementById('insert');
