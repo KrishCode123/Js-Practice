@@ -48,4 +48,5 @@ holdobjects(objectlist)
 holdobjects({
     username : "sam",
     price : 299
+    
 })
