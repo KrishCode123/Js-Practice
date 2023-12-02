@@ -19,31 +19,42 @@ newheros.krishnan()
 
 // Inheritances
 
-const user = {
-    username : "Krishnan",
-    Email : "krishnan@chai.com"
+const User = {
+    name: "chai",
+    email: "chai@google.com"
 }
 
-const teacher = {
-    makeVideo : true
-} 
-
-const Prteam = {
-    isavailable : false,
-    __proto__: teacher
+const Teacher = {
+    makeVideo: true
 }
 
-const TAsupport = {
-    makeassignment : true,
-    type : 'Make JS Assignment',
-    fulltime: true,
-    __proto__: Prteam
+const TeachingSupport = {
+    isAvailable: false
 }
 
-teacher.__proto__ = user
+const TASupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport
+}
+
+Teacher.__proto__ = User
+
+// modern syntax
+Object.setPrototypeOf(TeachingSupport, Teacher)
+
 
 // Modern
-Object.setPrototypeOf(Prteam ,TAsupport)
+// Object.setPrototypeOf(Prteam ,TAsupport)
+
+let myname = "Krishnan        "
+
+String.prototype.trueLength = function (){
+    console.log(this);
+    console.log(`The True Length is: ${this.trim().length}`);
+}
+
+myname.trueLength()
 
 
 
